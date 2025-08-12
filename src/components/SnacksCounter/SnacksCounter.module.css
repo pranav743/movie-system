@@ -1,0 +1,17 @@
+.card {
+  min-height: 350px;
+  min-width: 250px;
+  max-width: 45%;
+  border: none;
+  background: rgb(72, 69, 69); /* Dark gray background */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.15),
+    0 12px 32px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  color: #f2f2f2; /* Optional: Better text contrast on dark background */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}

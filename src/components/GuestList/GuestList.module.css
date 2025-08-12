@@ -1,0 +1,94 @@
+.card {
+  min-height: 350px;
+  min-width: 250px;
+  max-width: 45%;
+  border: none;
+  background: rgb(72, 69, 69); /* Dark gray background */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.15),
+    0 12px 32px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  color: #f2f2f2; /* Optional: Better text contrast on dark background */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.scrollView {
+  height: 170px;
+  font-size: 14px;
+  overflow-y: auto;
+  padding-right: 10px; /* Optional: prevent text under scrollbar */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #999 #333; /* Firefox */
+}
+
+/* Chrome, Edge, Safari */
+.scrollView::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollView::-webkit-scrollbar-track {
+  background: #333;
+}
+
+.scrollView::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 4px;
+}
+
+.listItem {
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  color: #e0e0e0;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.listItem:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.guestInput {
+  width: 100%;
+  padding: 10px 14px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #eee;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guestInput::placeholder {
+  color: #bbb;
+  opacity: 1; /* Make placeholder fully visible */
+}
+
+.guestInput:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.addButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+}

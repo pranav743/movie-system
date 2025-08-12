@@ -1,0 +1,19 @@
+.cardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.card {
+    min-height: 300px;
+    min-width: 250px;
+    border: none;
+    background: white; /* Or any background you want */
+    border-radius: 12px; /* Optional for smoother look */
+    box-shadow: 
+        0 4px 10px rgba(0, 0, 0, 0.1),
+        0 8px 20px rgba(0, 0, 0, 0.15),
+        0 12px 40px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
